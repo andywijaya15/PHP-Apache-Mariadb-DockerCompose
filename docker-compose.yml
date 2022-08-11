@@ -5,14 +5,14 @@ services:
     volumes:
       - ${PWD}/app:/var/www/html
     ports:
-      - 80:80
+      - 81:80
     links:
       - db
   db:
     image: mariadb:latest
     container_name: db
     ports:
-      - 3306:3306
+      - 3307:3306
     environment:
       MARIADB_ROOT_PASSWORD: rahasia
     restart: always
