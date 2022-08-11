@@ -10,6 +10,7 @@ Disini saya membuat docker-compose untuk mempermudah proses development dari 1 p
 
 ## Penjelasan singkat :
 
+Docker Compose ada untuk mengotomatisasi beberapa container agar kita tidak perlu merunningnya 1 1 karna akan memakan waktu yang lama ketika container yang kita butuhkan berkembang menjadi besar.
 Docker Compose yang saya buat akan membuat 2 container dengan nama webserver dan db.
 Container Webserver berisi image php7.4 yang sudah saya setup sedemikian rupa agar bisa menjalankan modrewrite untuk kebutuhan konversi url di php.
 Di container webserver juga telah saya definisikan volumes untuk mensinkronisasi folder /app ke folder /var/www/html di docker container agar project kita bisa kita ubah di pc kita bisa langsung berubah juga di webserver docker.
@@ -31,6 +32,9 @@ Ini bagus untuk development karna kita bisa memasukkan 1 project kita seperti la
 	* Windows dengan WSL Debian
 	* Docker
 	* Docker Compose V2.9.0
+
+Untuk installasi WSL di Windows  bisa dibaca [disini](https://docs.microsoft.com/en-us/windows/wsl/install) 
+Untuk installasi Docker Compose bisa dibaca [disini](https://docs.docker.com/compose/install/compose-plugin/) 
 	
 Cara mengeceknya dengan cara docker version untuk mengecek versi docker dan docker compose version untuk mengecek versi docker compose
 
