@@ -1,0 +1,20 @@
+services:
+  webserver:
+    build: ${PWD}/webserver
+    container_name: webserver
+    volumes:
+      - ${PWD}/app:/var/www/html
+    ports:
+      - 80:80
+    links:
+      - db
+  db:
+    image: mariadb:latest
+    container_name: db
+    ports:
+      - 3306:3306
+    environment:
+      MARIADB_ROOT_PASSWORD: rahasia
+    restart: always
+    volumes:
+      - ${PWD}/database:/var/lib/mysql
