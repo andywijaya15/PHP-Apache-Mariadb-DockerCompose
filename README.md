@@ -27,7 +27,9 @@ Ini bagus untuk development karna kita bisa memasukkan 1 project kita seperti la
 ## Cara penggunaan:
 
 * Pastikan sudah terinstall docker dan docker compose di perangkat yang digunakan,disini saya menggunakan :
-	* Docker 20.10.17
+	* Manjaro Linux
+	* Windows dengan WSL Debian
+	* Docker
 	* Docker Compose V2.9.0
 	
 Cara mengeceknya dengan cara docker version untuk mengecek versi docker dan docker compose version untuk mengecek versi docker compose
